@@ -11,7 +11,7 @@
         <link rel="stylesheet" href="index.css">
         <link rel="stylesheet" href="slide_styles.css">
         <link rel="stylesheet" href="fonts.css">
-        <link rel="stylesheet" href="animations.css">
+        <link rel="stylesheet" href="stretch_animation.css">
     </head>
 <body>
     <div class="main_container">
@@ -41,17 +41,17 @@
 			<img src="http://www.feeliberia.org/media/cms_page_media/1/apostle_sterling_3.jpg" alt="">
 
 		        <img src="http://www.feeliberia.org/media/cms_page_media/1/apostle_sterling_4.jpg" alt="">
-		        <!--<img src="http://www.feeliberia.org/media/cms_page_media/1/apostle_sterling_5.jpg" alt="">
+		        <img src="http://www.feeliberia.org/media/cms_page_media/1/apostle_sterling_5.jpg" alt="">
 			<img src="http://www.feeliberia.org/media/cms_page_media/1/apostle_sterling_6.jpg" alt="">
 
 		        <img src="http://www.feeliberia.org/media/cms_page_media/1/apostle_sterling_elem_%26_jr_high_school.jpg" alt="">
 		        <img src="http://www.feeliberia.org/media/cms_page_media/1/conquerors_high_school.jpg" alt="">
-			<img src="http://www.feeliberia.org/media/cms_page_media/1/lango_lippaye_1.jpg" alt="">-->
+			<img src="http://www.feeliberia.org/media/cms_page_media/1/lango_lippaye_1.jpg" alt="">
 		    </div>
 	        </div>
 <h1>title 2</h1>
                 <div class="first">
-		    <div class="slides">
+		    <div class="slides2">
 		        <img src="http://www.feeliberia.org/media/cms_page_media/1/lango_lippaye_2.jpg" alt="">
 		        <img src="http://www.feeliberia.org/media/cms_page_media/1/lango_lippaye_library_1.jpg" alt="">
 			<img src="http://www.feeliberia.org/media/cms_page_media/1/lango_lippaye_library_2.jpg" alt="">
@@ -90,10 +90,33 @@ $(function(){
 });
 </script>
 
+<script>
+$(function(){
+  $(".slides2").slidesjs({
+    play: {
+      active: true,
+        // [boolean] Generate the play and stop buttons.
+        // You cannot use your own buttons. Sorry.
+      effect: "fade",
+        // [string] Can be either "slide" or "fade".
+      interval: 3500,
+        // [number] Time spent on each slide in milliseconds.
+      auto: true,
+        // [boolean] Start playing the slideshow on load.
+      swap: true,
+        // [boolean] show/hide stop and play buttons
+      pauseOnHover: true,
+        // [boolean] pause a playing slideshow on hover
+      restartDelay: 1000,
+        // [number] restart delay on inactive slideshow
+    }
+  });
+});
+</script>
         </div>
  </aside>
         <footer>
-          <a href="#"><img id="animation" src="http://i.vimeocdn.com/video/549765696_1280x720.jpg"  alt=""/></a>
+	<div class="text"><a href="#">BREAKING NEWS</a></div>
 
 <a href="http://validator.w3.org/check/referer">
 <strong> HTML </strong> Valid! </a> 
@@ -103,8 +126,6 @@ $(function(){
 	   <div class="links">
 		<a href="index.html">Home</a> 
 		<a href="#">Tax Exemt</a>
-		<!--<a href="founders.html">Our Founders</a>
-                <a href="#">Master Plan</a>-->
 		<a href="contact.html">Contact Us</a>
 	    </div>
  
