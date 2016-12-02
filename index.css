@@ -1,3 +1,4 @@
+
 *{
 box-sizing: border-box;
 margin: 0;
@@ -11,6 +12,7 @@ body {
     background: #aed2d2;
     margin: auto;
     width: 90%;
+    max-width: 1024px;
     /*FLEX*/
     display: flex;
     flex-direction: row;
@@ -83,13 +85,13 @@ aside {
     flex-direction: column;
     justify-content: flex-start;
 }
-aside .left_box {
+/*aside .left_box {
     background: #aed2d2;
     height: 410px;
     margin: 2px;
     padding: 10px;
-}
-.right_box {
+}*/
+aside .main_box {
     background: #aed2d2;
     padding: 25px;
     /*FLEX*/
@@ -135,8 +137,38 @@ footer .social .icon-facebook {
 footer .social .icon-twitter {
     background: #00abf0;
 }
-footer .social a:hover {
+footer .social .icon-google-plus3 {
     background: #e74c3c;
+}
+footer .social .nova {
+    margin-left: 20px;
+    background: #3b5998;
+}
+footer .social .nova:hover {
+    background: ghostwhite;
+}
+footer .social a:hover {
+    background: #dd0909;
+}
+footer p {
+    margin-left: 145px;
+    margin-top: -60px;
+    position: absolute;
+    color: #fff;    
+    font-size: 12px;
+}
+footer img {
+    height: 18px;
+    width: 60px;    
+}
+
+@media screen and (max-width: 1000px) {
+footer .social {
+    margin-top: 10px;
+}
+footer .links {
+    margin-top: 25px;
+}
 }
 @media screen and (max-width: 700px) {
 .main_container {
@@ -161,7 +193,7 @@ aside {
     flex-direction: column;
     flex: 0;
 }
-aside .right_box {
+aside .main_box {
     flex-grow: 1;    
 }
 footer {
@@ -169,6 +201,11 @@ footer {
     padding: 5px;
     width: 100%;
 }
+footer .links {
+     margin-top: 30px;   
+     margin-bottom: 20px;
 }
-
-
+footer .social {
+    margin-top: 30px;    
+}
+}

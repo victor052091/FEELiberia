@@ -3,21 +3,22 @@
     border-radius: 20px;
     padding-top: 5px;
     text-align: center;
-    height: 40px;
-    width: 390px;
-    margin: 0 auto;
+    height: 30px;
+    width: 250px;
+    margin-left: 5%;
+    margin-right: 5%;
     background-color: yellow;
     animation-name: stretch;
     animation-duration: 1.5s; 
     animation-timing-function: ease-in; 
-    animation-delay: 0;
+    animation-delay: 1s;
     animation-direction: alternate;
     animation-iteration-count: infinite;
     animation-fill-mode: none;
     animation-play-state: running;
 }
 .text a {
-    font-size: 25px;
+    font-size: 18px;
     color: blue;
     text-decoration: none;    
 }
@@ -26,16 +27,16 @@
     border: 1px dotted blue;
 }
 @keyframes stretch {
-    0% {
-        transform: scale(.3);
-        background-color: yellow;
-        border-radius: 100%;
+0% {
+    transform: scale(.3);
+    background-color: yellow;
+    border-radius: 100%;
 }
-    50% {
-        background-color: lime;
+50% {
+    background-color: lime;
 }
-    100% {
-        transform: scale(1.5);
-        background-color: red;
+100% {
+    transform: scale(1.5);
+    background-color: red;
  }
 }

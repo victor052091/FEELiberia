@@ -1,13 +1,16 @@
 /* STYLE SHEET FOR INDEX.HTM */
+footer .text a {
+    width: 20px;    
+}
 footer img {
     border-radius: 40px;
     height: 60px;
     width: 190px;
 }
 @keyframes logoanimation { 
-0% {left: 0px; top: 0px;} 
-50% {left: 120px; top: 0px;} 
-100% {left: 0px; top: 0px;} 
+0% {right: 0px; top: 0px;} 
+50% {right: 100px; top: 0px;} 
+100% {right: 0px; top: 0px;} 
 } 
 #animation { 
   position:relative; 
