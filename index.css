@@ -91,14 +91,9 @@ h2 {
     font-size: 30px;
     text-align: center;
 }
-
-/*aside .left_box {
-    background: #aed2d2;
-    height: 410px;
-    margin: 2px;
-    padding: 10px;
-}*/
-
+p {
+    text-align: justify;    
+}
 footer {
     background: #172e73;
     padding: 20px;
