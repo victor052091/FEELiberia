@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <title>Breaking News</title>
         <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <script src="js/prefix.js"></script>
         <link rel="stylesheet" href="index.css">
         <link rel="stylesheet" href="fonts.css">
@@ -46,15 +46,15 @@ p.caption {
     height: auto;
     margin-left: auto;
     margin-right: auto;
-    width: 50vw;
+    width: 69%;
 }
 @keyframes animation {
 0% {
-    transform: scale(1.48);
+    transform: scale(1.5);
     background-color: yellow;
 }
 50% {
-    background-color: green;
+    background-color: lime;
 }
 100% {
     transform: scale(1.5);
@@ -62,7 +62,15 @@ p.caption {
  }
 }
 
+@media screen and (max-width: 1024px) {
+p.image img {
+    width: 75vw;
+}    
+}
 @media (max-width: 768px) {    
+main section {
+    padding: 15px; 
+}
 h1 {
     font-size: 5vw;   
  }
@@ -90,7 +98,7 @@ flex-wrap: nowrap;
 	    <nav>
 		<a href="index.html">Home</a>
 		<a href="founder.html">Founder</a>
-		<a href="galery.html">Galery</a>
+		<a href="gallery.html">Gallery</a>
                 <a href="ourhistory.html">Who we are?</a>
 		<a href="services.html">Services</a>
 		<a href="ourgoals.html">Master Plan</a>
@@ -144,12 +152,7 @@ flex-wrap: nowrap;
              <img src="media/image2.jpeg" alt="" />
             </p>          
             <br>
-        
-            <br>
-            <p>
- ……………………………………CUE……………………………………………………………
-            </p>
-            <br>
+
             <p>
             Receiving the 100 mathematics textbooks, the principal of the Lango Lappaye high school Robert Zazay described the gift as a surprised to his institution noting they were only expecting students to benefit.
             </p>
@@ -160,10 +163,6 @@ flex-wrap: nowrap;
             <br>
             <p>
             Mr. Zazay stressed he is optimistic that the students will remain focused on studying their lessons in order to make maximum use of the privileges given them by FEEL to acquire education. 
-            </p>
-            <br>
-            <p>
-………………………………………….CUE…………………………………………….
             </p>
             <br>
             <p>
@@ -193,11 +192,11 @@ flex-wrap: nowrap;
 	    </div>
  
 	    <div class="social">
-                <a href="http://www.facebook.com" target="_blank" class="icon-facebook"></a>	
-                <a href="http://www.twitter.com" target="_blank" class="icon-twitter"></a>
-                <a href="http://www.googleplus.com" target="_blank" class="icon-google-plus3"></a>
+                <a href="https://www.facebook.com/FEELiberia/?ref=bookmarks" target="_blank" class="icon-facebook"></a>	
+                <a href="https://twitter.com/FEELiberia/" target="_blank" class="icon-twitter"></a>
+                <a href="https://plus.google.com/u/0/113790821190415871943/about" target="_blank" class="icon-google-plus3"></a>
                 <p>Created by :</p>
-                <a href="http://novawebcoop.org/" target="_blank" class="nova"><img src="media/nwd.png" alt="NOVA Web Logo"></a>
+                <a href="http://novawebdevelopment.org/" target="_blank" class="nova"><img src="media/nwd.png" alt="NOVA Web Logo"></a>
 	    </div>
 	</footer>
     </div>

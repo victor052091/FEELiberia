@@ -15,7 +15,7 @@ body {
     max-width: 1024px;
     /*FLEX*/
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
 }
 header {
@@ -45,7 +45,8 @@ header .logo a {
     text-decoration: none;
 }
 header nav {
-    background: #dd0909;
+    background: linear-gradient(to top, #E70052 5%, #dd0909 20%, red 100%); 
+/*#dd0909;*/
     width: 70%;
     /*FLEX*/
     display: flex;
@@ -57,21 +58,23 @@ header nav a {
     padding: 10px;
     text-align: center;
     text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
     /*FLEX*/
     flex-grow: 1;
 }
 header nav a:hover {
     background: #e74c3c;
+    border-bottom: 1px solid lime;
+    border-top: 1px solid lime;
+    font-style: bold;
 }
 main {
     background: #172e73;
     padding: 20px;
     /*FLEX*/
-    display: flex;
-    flex: 1 1 35%;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: flex-start;
+    flex-direction: column;
+    justify-content: space-around;
 }
 main section {
     background: #aed2d2;
@@ -127,6 +130,10 @@ footer .social a {
     display: inline-block;
     padding: 10px;
     text-decoration: none;
+    transition: all 0.5s ease;
+}
+footer .social  a:hover {
+    transform: scale(1) rotate(360deg);
 }
 footer .social .icon-facebook {
     background: #3b5998;
@@ -181,6 +188,7 @@ header nav {
 @media screen and (max-width: 768px) {
 .main_container {
     flex-direction: column;
+    width: 98%;
 }
 header {
     border-radius: 0vw 0vw 0vw;
@@ -194,9 +202,8 @@ header .logo a {
     line-height: 130px; 
 }
 main {
-    padding: 8px;
+    padding: 6px;
     flex-direction: column;
-    flex: 0;
 }
 main section {
     flex-grow: 1;    

@@ -3,8 +3,8 @@ margin: 0;
 padding: 0;
 }
 .first {
-    width: 99%;
-    max-width: 1000px;
+    width: 100%;
+    max-width: 1500px;
     margin: 10px auto;
 }
 .slides {
@@ -52,7 +52,28 @@ padding: 0;
 .slidesjs-navigation:hover {
     background: #172e73;
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 768px) {
+.first {
+    width: 100%;
+    margin: auto;
+}
+.slides {
+    margin: auto;
+    width: 100%;
+}
+.slides img {
+    width: 100%;
+}
+.slides2 {
+    margin: auto;
+    width: 100%;
+}
+.slides2 img {
+    width: 100%;
+}   
+    
+}
+@media screen and (max-width: 768px) {
 .slidesjs-pagination li a {
     display: none;
 }

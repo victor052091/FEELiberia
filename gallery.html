@@ -2,9 +2,9 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Galery</title>
+        <title>Gallery</title>
         <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <script src="js/prefix.js"></script>
 	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 	<script src="js/jquery.slides.js"></script>
@@ -13,19 +13,22 @@
         <link rel="stylesheet" href="fonts.css">
         <link rel="stylesheet" href="stretch_animation.css">
         <style type="text/css">
-.caption {
-    opacity: 0.5; 
-    padding: 5px;
+
+p.caption {
     color: #fff;
-    background-color: #000;
-    margin-bottom: 50px;
-    margin-top: -98px;
-    width: 64.5vw;
-    height: auto;
-    margin-left: auto;
+    opacity: 0.4;
+    text-align: center;    
+    background: #000;
+    width: 90%;
     margin-right: auto;
-    z-index: 1000;
-    position: relative;
+    margin-left: auto;
+}
+
+@media (max-width: 768px) {
+p.caption {
+    font-size: 12px;
+    width: 100%; 
+ }    
 }
 
         </style>
@@ -35,13 +38,13 @@
         <header>
 	    <div class="logo">
 	        <img src="media/feeliberia-logo.png" width="150" alt="">
-		<a href="galery.html">Galery</a>
+		<a href="gallery.html">Gallery</a>
 	    </div>
  
 	    <nav>
 		<a href="index.html">Home</a>
 		<a href="founder.html">Founder</a>
-                <a href="galery.html">Galery</a>
+                <a href="gallery.html">Gallery</a>
 	        <a href="ourhistory.html">Who we are?</a>
 		<a href="services.html">Services</a>
 		<a href="ourgoals.html">Master Plan</a>
@@ -51,7 +54,7 @@
 
  <main>  	
     <section>
-<h1>title 1</h1>
+<h1>FEEL Presents Uniforms at Lango Lappaye 2015</h1>
 <br>
                 <div class="first">
 		    <div class="slides">
@@ -66,9 +69,10 @@
 		        <img src="slideshow1/img7.jpg" alt="">
 			<img src="slideshow1/img8.jpg" alt="">
 		    </div>
+<p class="caption">"FEEL Donates Uniform, Books and Stationery to Students at Lango Lippaye High School on Thanksgiving Day 2016"</p>
 	        </div>
-<div class="caption">"FEEL Donates Uniform, Books and Stationery to Students at Lango Lippaye High School on Thanksgiving Day 2016"</div>
-<h1>title 2</h1>
+<br>
+<h1>FEEL Presents Backpacks to Girls at Lango Lappaye on Thanksgiving 2016</h1>
 <br>
                 <div class="first">
 		    <div class="slides2">
@@ -84,7 +88,8 @@
 			<img src="slideshow_2_3/picture8.jpeg" alt="">
 		    </div>
 	        </div>
-<h1>title 3</h1>
+<br>
+<h1>FEEL Presents Blackboards to Schools in Kakata, Margibi County Liberia 2015</h1>
 <br>
                 <div class="first">
 		    <div class="slides">
@@ -160,11 +165,11 @@ $(function(){
 	    </div>
  
 	    <div class="social">
-                <a href="http://www.facebook.com" target="_blank" class="icon-facebook"></a>	
-                <a href="http://www.twitter.com" target="_blank" class="icon-twitter"></a>
-                <a href="http://www.googleplus.com" target="_blank" class="icon-google-plus3"></a>
+                <a href="https://www.facebook.com/FEELiberia/?ref=bookmarks" target="_blank" class="icon-facebook"></a>	
+                <a href="https://twitter.com/FEELiberia/" target="_blank" class="icon-twitter"></a>
+                <a href="https://plus.google.com/u/0/113790821190415871943/about" target="_blank" class="icon-google-plus3"></a>
                 <p>Created by :</p>
-                <a href="http://novawebcoop.org/" target="_blank" class="nova"><img src="media/nwd.png" alt="NOVA Web Logo"></a>
+                <a href="http://novawebdevelopment.org/" target="_blank" class="nova"><img src="media/nwd.png" alt="NOVA Web Logo"></a>
 	    </div>
 	</footer>
     </div>
